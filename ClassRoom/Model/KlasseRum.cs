@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace ClassRoom.Model
 {
-    class ClassRoom
+    class KlasseRum
     {
 
-        public ClassRoom()
+        public KlasseRum()
         {
             
         }
@@ -17,6 +17,7 @@ namespace ClassRoom.Model
         public string ClassName { get; set; }
         public List<Student> ClassList { get; set; }
         public DateTime SemesterStart { get; set; }
+
 
     }
 }
