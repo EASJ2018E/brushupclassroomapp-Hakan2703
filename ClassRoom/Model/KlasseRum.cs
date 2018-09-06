@@ -19,5 +19,9 @@ namespace ClassRoom.Model
         public DateTime SemesterStart { get; set; }
 
 
+        public override string ToString()
+        {
+            return $"{nameof(ClassName)}: {ClassName}, {nameof(ClassList)}: {ClassList}, {nameof(SemesterStart)}: {SemesterStart}";
+        }
     }
 }

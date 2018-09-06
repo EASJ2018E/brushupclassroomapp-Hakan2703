@@ -18,5 +18,11 @@ namespace ClassRoom.Model
         public string Name { get; }
         public int Birthmonth { get; }
         public int Birthday { get; }
+
+
+        public override string ToString()
+        {
+            return base.ToString();
+        }
     }
 }
