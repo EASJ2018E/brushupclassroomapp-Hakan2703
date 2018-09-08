@@ -17,6 +17,7 @@ namespace ClassRoom.Model
         public string ClassName { get; set; }
         public List<Student> ClassList { get; set; }
         public DateTime SemesterStart { get; set; }
+        
 
 
         public override string ToString()

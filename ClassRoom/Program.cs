@@ -13,17 +13,20 @@ namespace ClassRoom
         {
 
             KlasseRum førsteKlasse = new KlasseRum();
-            Student elevNummerEt = new Student("Hakan", 3,27);
-            Student eleverNummerto = new Student("Patrick",1,1);
             førsteKlasse.ClassName = "3B";
             førsteKlasse.SemesterStart = DateTime.Now;
 
             førsteKlasse.ClassList = new List<Student>();
-            førsteKlasse.ClassList.Add(elevNummerEt);
-            førsteKlasse.ClassList.Add(eleverNummerto);
+            førsteKlasse.ClassList.Add(new Student("Hakan", 3, 27));
+            førsteKlasse.ClassList.Add(new Student("Patrick", 1, 1));
+
+            foreach (var student in førsteKlasse.ClassList)
+            {
+                Console.WriteLine(student);
+            }
+
            
 
-            Console.WriteLine(førsteKlasse.ToString());
 
             Console.ReadKey();
         }

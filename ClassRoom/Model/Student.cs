@@ -22,7 +22,7 @@ namespace ClassRoom.Model
 
         public override string ToString()
         {
-            return base.ToString();
+            return $"{nameof(Name)}: {Name}, {nameof(Birthmonth)}: {Birthmonth}, {nameof(Birthday)}: {Birthday}";
         }
     }
 }
