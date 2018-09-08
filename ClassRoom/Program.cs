@@ -17,14 +17,25 @@ namespace ClassRoom
             førsteKlasse.SemesterStart = DateTime.Now;
 
             førsteKlasse.ClassList = new List<Student>();
-            førsteKlasse.ClassList.Add(new Student("Hakan", 3, 27));
-            førsteKlasse.ClassList.Add(new Student("Patrick", 1, 1));
+
+            Student elevEt = new Student("Anouar", 2, 6);
+            Student elevTo = new Student("Hakan",3,27);
+            Student elevTre = new Student("Sæve", 22, 10);
+
+            førsteKlasse.ClassList.Add(elevEt);
+            førsteKlasse.ClassList.Add(elevTo);
+            førsteKlasse.ClassList.Add(elevTre);
+            elevEt.season();
+            elevTo.season();
+            elevTre.season();
 
             foreach (var student in førsteKlasse.ClassList)
             {
                 Console.WriteLine(student);
             }
 
+           
+            
            
 
 
